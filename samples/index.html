@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="../src/jquery.shorten.js"></script>
+	
+	<TITLE>Dynamically shortened Text with Show More link using jQuery</TITLE>
+	<style>body {font-family: Calibri} div { width: 400px; margin:20px; padding:10px;}
+	a{
+		margin-left: 200px;
+	}
+</style>
+</HEAD>
+<BODY>
+
+<br/>
+<div class="comment">
+Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit. Vestibulum laoreet, <i>nunc eget laoreet sagittis, quam ligula</i></strong> sodales orci, congue imperdiet eros tortor ac lectus. Duis eget nisl orci. Aliquam mattis purus non mauris blandit id luctus felis convallis. Integer varius egestas vestibulum. Nullam a dolor arcu, ac tempor elit. Donec.
+Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit. Vestibulum laoreet, <i>nunc eget laoreet sagittis, quam ligula</i></strong> sodales orci, congue imperdiet eros tortor ac lectus. Duis eget nisl orci. Aliquam mattis purus non mauris blandit id luctus felis convallis. Integer varius egestas vestibulum. Nullam a dolor arcu, ac tempor elit. Donec.
+Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit. Vestibulum laoreet, <i>nunc eget laoreet sagittis, quam ligula</i></strong> sodales orci, congue imperdiet eros tortor ac lectus. Duis eget nisl orci. Aliquam mattis purus non mauris blandit id luctus felis convallis. Integer varius egestas vestibulum. Nullam a dolor arcu, ac tempor elit. Donec.
+Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit. Vestibulum laoreet, <i>nunc eget laoreet sagittis, quam ligula</i></strong> sodales orci, congue imperdiet eros tortor ac lectus. Duis eget nisl orci. Aliquam mattis purus non mauris blandit id luctus felis convallis. Integer varius egestas vestibulum. Nullam a dolor arcu, ac tempor elit. Donec.
+</div>
+
+<script language="javascript">
+$(document).ready(function() {
+	
+	$(".comment").shorten('destroy');
+
+
+	
+	$(".comment-small").shorten({showChars: 10});
+
+ });
+</script>
+</BODY>
+</HTML>
